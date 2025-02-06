@@ -1,0 +1,387 @@
+/* --- UNIVERSAL STYLES --- */
+
+* {
+    font-family: Helvetica, sans-serif;
+    /* font-family: "Manrope", sans-serif; */
+    line-height: auto;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: "Prata", serif; */
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: black;
+}
+
+button a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.table-content-center thead,
+.table-content-center tbody td {
+    text-align: center;
+}
+
+
+
+/* --- REUSABLE CLASSES */
+
+.block {
+    display: block;
+}
+
+.max-width {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-width-narrow {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-a-i-center {
+    align-items: center;
+}
+
+/* .gap-20 {
+    gap: 20px;
+} */
+
+.flex-item-r-25 {
+    flex: 0 0 50%;
+    padding: 10px;
+}
+
+.flex-item-img {
+    aspect-ratio: 1 / 1;
+}
+
+.flex-item-img img {
+    position: relative;
+    min-width: 135%;
+    left: -20%;
+    top: -10%;
+}
+
+.flex-item-33,
+.flex-item-50,
+.flex-item-67,
+.flex-item-100 {
+    flex: 100%;
+    padding: 10px;
+}
+
+
+
+.h-sans {
+    font-family: "Manrope", sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.white,
+.text-white {
+    color: white;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-grey {
+    background-color: #ededed;
+}
+
+.box-shadow {
+    box-shadow: 5px 10px 20px rgba(144, 144, 144, .3);
+}
+
+.rounded-corner {
+    border-radius: 10px;
+}
+
+
+
+.marg-b-20 {
+    margin-bottom: 20px;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.pad-lr-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pad-tb-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pad-tb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pad-tb-100 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.btn-reg {
+    border: none;
+    background-color: black;
+}
+
+.btn-reg a {
+    color: white !important;
+}
+
+
+
+/* --- HEADER STYLES --- */
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    padding: 10px 40px;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container ul {
+    width: 100%;
+}
+
+nav p,
+nav a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #dedede;
+}
+
+nav .tagline {
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+
+.hero-banner-home {
+    background: url("../images/mars-1.jpg");
+    height: 100vh !important;
+}
+
+.hero-banner-learn {
+    background: url("../images/diamond-2.jpg");
+
+}
+
+.hero-banner-attr {
+    background-color: #dedede;
+}
+
+.hero-banner {
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    min-height: 300px;
+}
+
+.hero-banner-content {
+    max-width: 800px;
+    padding: 20px;
+    /* background-color: #eb2940; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+}
+
+.hero-banner-home .hero-banner-content {
+    margin-top: 35vh;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    /* Type scale setup by https://typescale.com/ */
+
+    h1 {
+        font-size: 3.815rem;
+    }
+
+    h2 {
+        font-size: 2.441rem;
+    }
+
+    h3 {
+        font-size: 1.953rem;
+    }
+
+    h4 {
+        font-size: 1.563rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    section {
+        margin-bottom: 0;
+    }
+
+    .pad-tb-100 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex-item-r-25 {
+        flex: 25%;
+    }
+
+    .flex-item-33 {
+        flex: 0 0 33.3%;
+    }
+
+    .flex-item-50 {
+        flex: 0 0 50%;
+    }
+
+    .flex-item-67 {
+        flex: 0 0 66.7%;
+    }
+
+    .nav-container ul {
+        width: 66.67%;
+        text-align: end;
+    }
+
+    nav .tagline {
+        width: 33.33%;
+    }
+    
+    .nav-container li {
+        display: inline-block;
+        padding: 0 30px;
+    }
+
+    .hero-banner {
+        height: 20vh;
+    }
+
+
+}
