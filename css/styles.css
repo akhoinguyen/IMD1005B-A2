@@ -5,6 +5,10 @@
     /* font-family: "Manrope", sans-serif; */
     line-height: auto;
     scroll-behavior: smooth;
+    --black: #000;
+    --white: #fff;
+    --light-grey: #dedede;
+    --primary: #430707;
 }
 
 h1,
@@ -29,7 +33,7 @@ h6 {
 }
 
 a {
-    color: black;
+    color: var(--black)
 }
 
 button a {
@@ -39,7 +43,7 @@ button a {
 }
 
 button:hover {
-    background-color: #666;
+    background-color: var(--white);
 }
 
 section {
@@ -55,13 +59,27 @@ table {
 
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid var(--black);
     padding: 10px;
 }
 
 .table-content-center thead,
 .table-content-center tbody td {
     text-align: center;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    padding: 20px;
+    z-index: 2000;
+    font-size: 1.25rem;
+    background-color: var(--white);
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 
@@ -138,6 +156,25 @@ td {
 
 
 
+.grid {
+    display: grid;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr;
+}
+
+.grid-gap-20 {
+    gap: 20px;
+}
+
+.grid-item-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .h-sans {
     font-family: "Manrope", sans-serif;
 }
@@ -160,22 +197,26 @@ td {
 }
 
 .bg-white {
-    background-color: white;
+    background-color: var(--white);
 }
 
 .bg-black {
-    background-color: black;
+    background-color: var(--black);
 }
 
 .bg-grey {
-    background-color: #ededed;
+    background-color: var(--light-grey);
+}
+
+.bg-dark-red {
+    background-color:var(--primary);
 }
 
 .box-shadow {
     box-shadow: 5px 10px 20px rgba(144, 144, 144, .3);
 }
 
-.rounded-corner {
+.rounded-corners {
     border-radius: 10px;
 }
 
@@ -213,11 +254,15 @@ td {
 
 .btn-reg {
     border: none;
-    background-color: black;
+    background-color: var(--primary);
 }
 
 .btn-reg a {
-    color: white !important;
+    color: var(--white) !important;
+}
+
+.btn-reg a:hover {
+    color: var(--black) !important;
 }
 
 
@@ -229,7 +274,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: black;
+    background-color: var(--primary);
     padding: 10px 40px;
 }
 
@@ -248,13 +293,13 @@ nav {
 
 nav p,
 nav a {
-    color: #fff;
+    color: var(--white);
     margin: 10px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #dedede;
+    color: var(--light-grey);
 }
 
 nav .tagline {
@@ -276,7 +321,7 @@ nav .tagline {
 }
 
 .hero-banner-attr {
-    background-color: #dedede;
+    background-color: var(--light-grey);
 }
 
 .hero-banner {
@@ -344,6 +389,8 @@ nav .tagline {
         padding-bottom: 100px;
     }
 
+
+
     .flex {
         flex-direction: row;
         flex-wrap: wrap;
@@ -364,6 +411,14 @@ nav .tagline {
     .flex-item-67 {
         flex: 0 0 66.7%;
     }
+
+
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
 
     .nav-container ul {
         width: 66.67%;
