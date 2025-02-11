@@ -216,6 +216,10 @@ td {
     box-shadow: 5px 10px 20px rgba(144, 144, 144, .3);
 }
 
+.box-shadow-white {
+    box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.5);
+}
+
 .rounded-corners {
     border-radius: 10px;
 }
@@ -364,11 +368,11 @@ nav .tagline {
         font-size: 2.441rem;
     }
 
-    h3 {
+    /* h3 {
         font-size: 1.953rem;
-    }
+    } */
 
-    h4 {
+    h3, h4 {
         font-size: 1.563rem;
     }
 
