@@ -196,6 +196,8 @@ td {
     color: white;
 }
 
+
+
 .bg-white {
     background-color: var(--white);
 }
@@ -228,6 +230,10 @@ td {
 
 .marg-b-20 {
     margin-bottom: 20px;
+}
+
+.marg-b-0 {
+    margin-bottom: 0;
 }
 
 .pad-20 {
