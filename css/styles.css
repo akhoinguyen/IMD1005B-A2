@@ -1,4 +1,4 @@
-/* --- UNIVERSAL STYLES --- */
+/* ---------- UNIVERSAL STYLES ---------- */
 
 * {
     font-family: Helvetica, sans-serif;
@@ -9,6 +9,7 @@
     --white: #fff;
     --light-grey: #dedede;
     --primary: #430707;
+    --secondary: #ffd4d4;
 }
 
 h1,
@@ -84,7 +85,7 @@ td {
 
 
 
-/* --- REUSABLE CLASSES */
+/* ---------- REUSABLE CLASSES ---------- */
 
 .block {
     display: block;
@@ -214,19 +215,29 @@ td {
     background-color: var(--primary);
 }
 
+.bg-light-red {
+    background-color: var(--secondary);
+}
+
+
+
 .box-shadow {
     box-shadow: 5px 10px 20px rgba(144, 144, 144, .3);
 }
 
 .box-shadow-white {
-    box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 10px 20px rgba(255, 255, 255, .25);
+}
+
+.box-shadow-light-red {
+    box-shadow: 5px 10px 20px rgba(255, 212, 212, .5);
 }
 
 .rounded-corners {
     border-radius: 10px;
 }
 
-
+/* margins and paddings */
 
 .marg-b-20 {
     margin-bottom: 20px;
@@ -311,7 +322,7 @@ td {
 
 
 
-/* --- HEADER STYLES --- */
+/* ---------- HEADER STYLES ---------- */
 
 nav {
     position: fixed;
@@ -411,7 +422,7 @@ nav .tagline {
     background-attachment: fixed;
 }
 
-/* MAIN CONTENT STYLES */
+/* ---------- MAIN CONTENT STYLES ---------- */
 
 .home-section-2 {
     background-image: url("../images/stars-1.jpg");
@@ -419,6 +430,8 @@ nav .tagline {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
 
 @media only screen and (min-width: 768px) {
 
