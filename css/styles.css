@@ -319,27 +319,40 @@ nav {
     width: 100%;
     z-index: 1000;
     background-color: var(--primary);
-    padding: 10px 40px;
+    padding: 0 20px;
 }
 
 .nav-container {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .nav-container ul {
+    width: 100%;
+    padding: 0;
+}
+
+.nav-container li {
+    display: inline-block;
     width: 100%;
 }
 
 nav p,
 nav a {
+    display: inline-block;
+    width: 100%;
     color: var(--white);
-    margin: 10px;
     text-decoration: none;
+}
+
+nav a {
+    padding: 20px 40px;
 }
 
 nav a:hover {
@@ -347,9 +360,10 @@ nav a:hover {
 }
 
 nav .tagline {
-    width: 100%;
     font-size: 1.25rem;
+    padding: 20px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 
@@ -474,19 +488,21 @@ nav .tagline {
     }
 
 
+    .nav-container {
+        flex-direction: row;
+    }
 
     .nav-container ul {
-        width: 66.67%;
+        width: 75%;
         text-align: end;
     }
 
-    nav .tagline {
-        width: 33.33%;
+    .nav-container li {
+        width: max-content;
     }
 
-    .nav-container li {
-        display: inline-block;
-        padding: 0 30px;
+    nav .tagline {
+        width: 25%;
     }
 
     .hero-banner {
