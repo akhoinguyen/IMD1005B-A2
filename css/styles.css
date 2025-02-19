@@ -2,14 +2,16 @@
 
 * {
     font-family: Helvetica, sans-serif;
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans", sans-serif;
     line-height: auto;
     scroll-behavior: smooth;
     --black: #000;
     --white: #fff;
-    --light-grey: #dedede;
-    --primary: #430707;
-    --secondary: #ffd4d4;
+    --light-grey: #d6d6d6;
+    --primary: #672518;
+    --secondary: #fdb17d;
+
+    transition: all 0.2s ease;
 }
 
 h1,
@@ -28,13 +30,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Orbitron", serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 800;
-    color: var();
 }
 
 a {
-    color: var(--black);
+    color: var(--primary);
 }
 
 button {
@@ -161,6 +162,10 @@ td {
     display: grid;
 }
 
+.grid-2 {
+    grid-template-columns: 1fr;
+}
+
 .grid-3 {
     grid-template-columns: 1fr;
 }
@@ -177,7 +182,7 @@ td {
 
 
 .h-sans {
-    font-family: "Manrope", sans-serif;
+    font-family: "Noto Sans", serif;
 }
 
 .text-center {
@@ -236,6 +241,8 @@ td {
 .rounded-corners {
     border-radius: 10px;
 }
+
+
 
 /* margins and paddings */
 
@@ -313,11 +320,19 @@ td {
 }
 
 .btn-ghost-reversed:hover {
-    background-color: var(--white);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .btn-ghost-reversed a:hover {
-    color: var(--primary) !important;
+    color: var(--black) !important;
+}
+
+
+
+.ani-up {
+    transition: transform 0.4s ease-in-out;
+    transform: translateY(-20px);
 }
 
 
@@ -367,7 +382,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--light-grey);
+    color: var(--secondary);
 }
 
 nav .tagline {
@@ -383,7 +398,8 @@ nav .tagline {
     background: url("../images/mars-1.jpg");
     background-color: rgba(67, 7, 7, 0.67);
     background-blend-mode: color-burn;
-    height: 100vh !important;
+    min-height: 100vh !important;
+    margin-top: 100px;
 
 }
 
@@ -397,7 +413,6 @@ nav .tagline {
 }
 
 .hero-banner {
-    padding: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -415,12 +430,14 @@ nav .tagline {
 }
 
 .hero-banner-home .hero-banner-content {
-    margin-top: 35vh;
+    margin-top: 40vh;
 }
 
 .hero-banner-parallax {
     background-attachment: fixed;
 }
+
+
 
 /* ---------- MAIN CONTENT STYLES ---------- */
 
@@ -494,7 +511,9 @@ nav .tagline {
         flex: 0 0 66.7%;
     }
 
-
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .grid-3 {
         grid-template-columns: repeat(3, 1fr);
@@ -520,7 +539,21 @@ nav .tagline {
 
     .hero-banner {
         height: 20vh;
+        padding: 40px;
     }
+
+    .hero-banner-home {
+        margin-top: 0;
+    }
+
+    .hero-banner-home .hero-banner-content {
+        margin-top: 20vh;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
 
 
 }

@@ -7,8 +7,7 @@ $gallery.addEventListener('mouseover', (event) => {
     // alert('clicked');
 
     if (item) {
-        // alert('clicked on image');
-        item.classList.add('bg-light-red', 'box-shadow-light-red');
+        item.classList.add('bg-light-red', 'box-shadow-light-red', 'ani-up');
     }
 })
 
@@ -19,7 +18,6 @@ $gallery.addEventListener('mouseout', (event) => {
     // alert('clicked');
 
     if (item) {
-        // alert('clicked on image');
-        item.classList.remove('bg-light-red', 'box-shadow-light-red');
+        item.classList.remove('bg-light-red', 'box-shadow-light-red', 'ani-up');
     }
 })
