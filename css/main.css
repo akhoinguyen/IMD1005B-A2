@@ -377,6 +377,10 @@ nav {
     width: 100%;
 }
 
+.nav-container li:hover {
+    background-color: var(--secondary);
+}
+
 nav p,
 nav a {
     display: inline-block;
@@ -390,14 +394,27 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary);
+    color: var(--black);
 }
 
 nav .tagline {
     font-size: 1.25rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
     padding: 20px;
-    font-weight: bold;
     margin-bottom: 0;
+}
+
+.nav-current {
+    background-color: var(--secondary);
+}
+
+.nav-current a {
+    color: var(--black);
+}
+
+.nav-current:hover, .nav-current a:hover {
+    pointer-events: none;
 }
 
 
