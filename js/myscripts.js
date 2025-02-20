@@ -7,7 +7,7 @@ console.log(document.getElementById('lightbox-gallery'));
 
 if ($gallery) {
 
-    // Fancy hover effect for mouse
+    // Fancy hover effect
     $gallery.addEventListener('mouseover', (event) => {
         const item = event.target.closest('.gallery-item');
 
@@ -23,29 +23,12 @@ if ($gallery) {
             item.classList.remove('bg-light-red', 'box-shadow-light-red', 'ani-up');
         }
     });
-
-    // Fancy hover effect for touch
-    $gallery.addEventListener('touchstart', (event) => {
-        const item = event.target.closest('.gallery-item');
-
-        if (item) {
-            item.classList.add('bg-light-red', 'box-shadow-light-red', 'ani-up');
-        }
-    });
-
-    $gallery.addEventListener('touchend', (event) => {
-        const item = event.target.closest('.gallery-item');
-
-        if (item) {
-            item.classList.remove('bg-light-red', 'box-shadow-light-red', 'ani-up');
-        }
-    });
 }
 
 if ($lightboxGallery) {
 
-    // Open lightbox for mouse and touch
-    const openLightbox = (event) => {
+    // Open lightbox
+    $lightboxGallery.addEventListener('click', (event) => {
         const clickedLightbox = event.target.closest('.gallery-item');
 
         if (clickedLightbox) {
@@ -55,10 +38,7 @@ if ($lightboxGallery) {
                 lightboxOverlay.style.display = 'block';
             }
         }
-    };
-
-    $lightboxGallery.addEventListener('click', openLightbox);
-    $lightboxGallery.addEventListener('touchstart', openLightbox);
+    });
 
     // Close lightbox when hitting Esc
     document.addEventListener('keydown', (event) => {

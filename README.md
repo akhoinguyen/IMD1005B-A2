@@ -19,3 +19,9 @@
 ### Knowledge
 
 - [Temperatures Across Our Solar System](https://science.nasa.gov/solar-system/temperatures-across-our-solar-system/#:~:text=The%20median%20surface%20temperature%20on,F%20(%2D153%C2%B0C))
+
+---
+
+## Issues encountered log
+
+- Safari ```height``` property behaves unexpectedly when set to 100% - appeared in lightbox ```picture``` elemment
