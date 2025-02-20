@@ -7,7 +7,7 @@ console.log(document.getElementById('lightbox-gallery'));
 
 if ($gallery) {
 
-    //Famcy hover effect
+    // Fancy hover effect
     $gallery.addEventListener('mouseover', (event) => {
         const item = event.target.closest('.gallery-item');
 
@@ -67,6 +67,4 @@ if ($lightboxGallery) {
             }
         });
     }
-
-    
 }
