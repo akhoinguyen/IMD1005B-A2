@@ -166,8 +166,16 @@
                         say "That's where our second home is."</p>
                 </div>
 
-                <div>
-                    <picture>
+                <div id="lightbox-gallery">
+                    <div class="lightbox-overlay"><button class="btn-reg white" id="lightbox-btn"><svg width="32"
+                                height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="stroke: white; stroke-width: 4;">
+                                <line x1="3" y1="3" x2="29" y2="29" />
+                                <line x1="29" y1="3" x2="3" y2="29" />
+                            </svg>
+                            <p>Exit</p>
+                        </button></div>
+                    <picture class="gallery-item">
                         <source srcset="./images/mars-3-400px.jpg,
                                 ./images/mars-3-800px.jpg 2x,
                                 ./images/mars-3-1200px.jpg 3x" media="(max-width: 320px)">
@@ -200,4 +208,5 @@
 
     <script src="./js/myscripts.js"></script>
 </body>
+
 </html>
