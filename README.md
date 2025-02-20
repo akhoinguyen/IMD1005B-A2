@@ -16,6 +16,11 @@
 
 - Curiosity Rover by [NASA](https://science.nasa.gov/resource/a-picture-postcard-from-curiositys-navcams/)
 
+- Photo by [Pixabay](https://www.pexels.com/photo/gray-and-white-robot-73910/)
+
+- Photo by [Photobank Kiev](https://unsplash.com/photos/3-men-standing-on-rocky-shore-during-daytime-Opzk_hvwO9Q) on Unsplash
+      
+
 ### Knowledge
 
 - [Temperatures Across Our Solar System](https://science.nasa.gov/solar-system/temperatures-across-our-solar-system/#:~:text=The%20median%20surface%20temperature%20on,F%20(%2D153%C2%B0C))
