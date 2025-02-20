@@ -235,15 +235,15 @@ picture img {
 
 
 .box-shadow {
-    box-shadow: 5px 10px 20px rgba(144, 144, 144, .3);
+    box-shadow: 4px 8px 16px rgba(144, 144, 144, .3);
 }
 
 .box-shadow-white {
-    box-shadow: 5px 10px 20px rgba(255, 255, 255, .25);
+    box-shadow: 4px 8px 16px rgba(255, 255, 255, .25);
 }
 
 .box-shadow-light-red {
-    box-shadow: 5px 10px 20px rgba(255, 212, 212, .5);
+    box-shadow: 4px 8px 16px rgba(255, 212, 212, .3);
 }
 
 .rounded-corners {
@@ -338,9 +338,40 @@ picture img {
 
 
 
+.lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 25%;
+    left: calc(50% - 400px);
+    width: 100%;
+    max-width: 800px;
+}
+
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+}
+
+.lightbox-overlay button {
+    position: absolute;
+    z-index: 2001;
+    top: calc(25% - 100px);
+    right: 400px;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+
+
 .ani-up {
     transition: transform 0.4s ease-in-out;
-    transform: translateY(-20px);
+    transform: translateY(-16px);
 }
 
 
