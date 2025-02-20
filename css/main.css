@@ -463,8 +463,8 @@ nav .tagline {
 
 
 .hero-banner-home {
-    background: url("../images/mars-1.jpg");
     background-color: rgba(67, 7, 7, 0.67);
+    background-image: url("../images/mars-1.jpg");
     background-blend-mode: color-burn;
     min-height: 100vh !important;
     margin-top: 100px;
