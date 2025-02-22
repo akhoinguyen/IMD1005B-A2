@@ -10,8 +10,6 @@
     --light-grey: #d6d6d6;
     --primary: #672518;
     --secondary: #fdb17d;
-
-    transition: all 0.2s ease;
 }
 
 h1,
@@ -340,13 +338,12 @@ picture img {
 .lightbox {
     position: fixed;
     z-index: 1500;
-    bottom: calc(25% - 100px);
-    left: calc(50% - 400px);
+    bottom: calc(25% - 200px);
+    left: 0;
     width: 100%;
     height: fit-content;
     max-width: 800px;
-    transition: none;
-    padding: 40px;
+    padding: 20px;
 }
 
 .lightbox img {
@@ -368,8 +365,8 @@ picture img {
 .lightbox-overlay button {
     position: absolute;
     z-index: 2000;
-    top: calc(10%);
-    right: calc(10%);
+    top: calc(30%);
+    right: 0;
     background-color: inherit;
     padding: 20px;
 }
@@ -623,6 +620,17 @@ nav .tagline {
 
     .grid-4 {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .lightbox {
+        bottom: calc(25% - 100px);
+        left: calc(50% - 400px);
+        padding: 40px;
+    }
+
+    .lightbox-overlay button {
+        top: 10%;
+        right: 10%;
     }
 
 }

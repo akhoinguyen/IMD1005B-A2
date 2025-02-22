@@ -19,7 +19,10 @@
 - Photo by [Pixabay](https://www.pexels.com/photo/gray-and-white-robot-73910/)
 
 - Photo by [Photobank Kiev](https://unsplash.com/photos/3-men-standing-on-rocky-shore-during-daytime-Opzk_hvwO9Q) on Unsplash
-      
+
+- Blue sunset on Mars by Curiosity Rover [NASA](https://solarsystem.nasa.gov/system/downloadable_items/3025_PIA19401.jpg)
+
+- Photo by [SpaceX](https://www.pexels.com/photo/white-space-ship-and-brown-planet-586030/)
 
 ### Knowledge
 

@@ -33,6 +33,7 @@ if ($lightboxGallery) {
 
         if (clickedLightbox) {
             clickedLightbox.classList.add('lightbox');
+            clickedLightbox.style.height = ''; // Overrride custom height: 100% when out of lightbox
             const lightboxOverlay = document.querySelector('.lightbox-overlay');
             if (lightboxOverlay) {
                 lightboxOverlay.style.display = 'block';
