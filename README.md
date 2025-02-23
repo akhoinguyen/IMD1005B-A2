@@ -24,12 +24,26 @@
 
 - Photo by [SpaceX](https://www.pexels.com/photo/white-space-ship-and-brown-planet-586030/)
 
+- Olympus Mons by ESA Mars Express [Andrea Luck](https://www.flickr.com/photos/192271236@N03/)
+
+- Cloudy Valles Marineris by ESA Mars Express [Andrea Luck](https://www.flickr.com/photos/192271236@N03/53745802596/)
+
+- North Polar Cap by ESA Mars Express [Andrea Luck](https://www.flickr.com/photos/192271236@N03/52876607762/)
+
+- Dust storm near Olympus Mons by ESA Mars Express [Andrea Luck](https://www.flickr.com/photos/192271236@N03/52929040126/)
+
+- Phobos over Mars by ESA Mars Express [Andrea Luck](https://www.flickr.com/photos/192271236@N03/)
+
 ### Knowledge
 
 - [Temperatures Across Our Solar System](https://science.nasa.gov/solar-system/temperatures-across-our-solar-system/#:~:text=The%20median%20surface%20temperature%20on,F%20(%2D153%C2%B0C))
 
+- [The Fact and Fiction of Martian Dust Storms](https://www.nasa.gov/solar-system/the-fact-and-fiction-of-martian-dust-storms/)
+
 ---
 
-## Issues encountered log
+## Issues log
 
 - Safari ```height``` property behaves unexpectedly when set to 100% - appeared in lightbox ```picture``` elemment
+
+- Safari ```background-blend-mode``` renders weird when there are 2 backgrounds (an image and a colour overlay)

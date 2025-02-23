@@ -5,7 +5,7 @@
     font-family: "Noto Sans", sans-serif;
     line-height: auto;
     scroll-behavior: smooth;
-    --black: #000;
+    --black: #121212;
     --white: #fff;
     --light-grey: #d6d6d6;
     --primary: #672518;
@@ -73,7 +73,7 @@ td {
     top: -100px;
     left: 0;
     padding: 20px;
-    z-index: 2000;
+    z-index: 2000000;
     font-size: 1.25rem;
     background-color: var(--white);
 }
@@ -391,7 +391,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100000;
+    z-index: 10000;
     background-color: var(--primary);
     padding: 0 20px;
 }
