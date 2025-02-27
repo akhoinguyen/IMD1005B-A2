@@ -15,6 +15,11 @@
     height: 100%;
 }
 
+.lightbox {
+    aspect-ratio: 3 / 2;
+    height: fit-content !important;
+}
+
 @media only screen and (min-width: 768px) {
   
     .hero-banner {
@@ -27,5 +32,11 @@
 
     .flex picture {
         aspect-ratio: 3 / 2;
+    }
+
+    .lightbox {
+        max-width: 800px;
+        left: calc(50% - 400px);
+        bottom: calc(25% - 100px);
     }
 }
