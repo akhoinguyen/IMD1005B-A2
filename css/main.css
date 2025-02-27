@@ -12,6 +12,10 @@
     --secondary: #fdb17d;
 }
 
+body {
+    min-height: 100vh;
+}
+
 h1,
 h2,
 h3,
@@ -345,7 +349,7 @@ picture img {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     max-height: calc(100% - 275px); /* Compensate for nav height 262px */
     /* max-width: 400px; */
     padding: 20px;
@@ -583,11 +587,11 @@ nav .tagline {
     }
 
     .lightbox {
-        max-height: calc(100% - 70px); /* Compensate for nav height 70px */
+        max-height: calc(100% - 100px); /* Compensate for nav height 70px */
     }
 
     #lightbox-btn {
-        top: 10%;
+        top: 100px;
     }
 
 
@@ -629,7 +633,7 @@ nav .tagline {
     .flex-item-33 {
         flex: 0 0 33.3%;
     }
-    
+
     .flex-item-67 {
         flex: 0 0 66.7%;
     }
