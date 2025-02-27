@@ -346,7 +346,7 @@ picture img {
     left: 0;
     width: 100%;
     height: fit-content;
-    max-height: 90vh;
+    max-height: calc(100% - 275px); /* Compensate for nav height 262px */
     /* max-width: 400px; */
     padding: 20px;
 }
@@ -370,7 +370,7 @@ picture img {
     position: fixed;
     background-color: initial !important;
     z-index: 2000;
-    top: 275px; /* to overcome mobile nav height 262px */
+    top: 275px; /* to compensate mobile nav height 262px */
     right: 0;
     background-color: inherit;
     padding: 20px;
@@ -487,7 +487,6 @@ nav .tagline {
 .hero-banner-content {
     max-width: 800px;
     padding: 20px;
-    /* background-color: #eb2940; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vh;
@@ -591,10 +590,9 @@ nav .tagline {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* .lightbox {
-        max-width: 600px;
-        left: calc(50% - 300px);
-    } */
+    .lightbox {
+        max-height: calc(100% - 70px); /* Compensate for nav height 70px */
+    }
 
     #lightbox-btn {
         top: 10%;
