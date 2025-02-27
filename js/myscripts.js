@@ -1,9 +1,9 @@
-const $gallery = document.querySelector('.hover-gallery');
-const $lightboxGallery = document.querySelector('.lightbox-gallery');
-const $lightboxBtn = document.querySelector('.lightbox-btn');
+const $gallery = document.getElementById('hover-gallery');
+const $lightboxGallery = document.getElementById('lightbox-gallery');
+const $lightboxBtn = document.getElementById('lightbox-btn');
 
-console.log(document.querySelector('.hover-gallery'));
-console.log(document.querySelector('.lightbox-gallery'));
+console.log(document.getElementById('hover-gallery'));
+console.log(document.getElementById('lightbox-gallery'));
 
 if ($gallery) {
 
