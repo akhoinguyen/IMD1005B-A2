@@ -10,8 +10,7 @@
     margin-top: 10vh;
 }
 
-.flex img {
-    aspect-ratio: 3 / 2;
+.flex picture {
     object-fit: cover;
     height: 100%;
 }
@@ -24,5 +23,9 @@
 
     .hero-banner-content {
         margin-top: 5vh;
+    }
+
+    .flex picture {
+        aspect-ratio: 3 / 2;
     }
 }
