@@ -566,16 +566,8 @@ nav .tagline {
         flex: 25%;
     }
 
-    .flex-item-33 {
-        flex: 0 0 33.3%;
-    }
-
-    .flex-item-50 {
+    .flex-item-50, .flex-item-33 , .flex-item-67 {
         flex: 0 0 50%;
-    }
-
-    .flex-item-67 {
-        flex: 0 0 66.7%;
     }
 
     .grid-1-2-3rd {
@@ -634,13 +626,16 @@ nav .tagline {
 
 @media only screen and (min-width: 1024px) {
 
-    .grid-4 {
-        grid-template-columns: repeat(4, 1fr);
+    .flex-item-33 {
+        flex: 0 0 33.3%;
+    }
+    
+    .flex-item-67 {
+        flex: 0 0 66.7%;
     }
 
-    .lightbox {
-        /* max-width: 800px; */
-        /* left: calc(50% - 400px); */
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }
