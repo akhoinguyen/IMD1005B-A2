@@ -343,10 +343,11 @@ picture img {
     position: fixed;
     z-index: 1500;
     bottom: 0;
-    left: calc(50% - 200px);
+    left: 0;
     width: 100%;
     height: fit-content;
-    max-width: 400px;
+    max-height: 90vh;
+    /* max-width: 400px; */
     padding: 20px;
 }
 
@@ -356,7 +357,6 @@ picture img {
 }
 
 .lightbox-overlay {
-    display: none;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -366,8 +366,9 @@ picture img {
     background-color: var(--black);
 }
 
-.lightbox-overlay button {
-    position: absolute;
+#lightbox-btn {
+    position: fixed;
+    background-color: initial !important;
     z-index: 2000;
     top: 275px; /* to overcome mobile nav height 262px */
     right: 0;
@@ -375,9 +376,8 @@ picture img {
     padding: 20px;
 }
 
-.lightbox-overlay svg, .lightbox-overlay p {
-    position: relative;
-    z-index: 2500;
+.lightbox-overlay, #lightbox-btn {
+    display: none;
 }
 
 
@@ -591,12 +591,12 @@ nav .tagline {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .lightbox {
+    /* .lightbox {
         max-width: 600px;
         left: calc(50% - 300px);
-    }
+    } */
 
-    .lightbox-overlay button {
+    #lightbox-btn {
         top: 10%;
     }
 
@@ -641,8 +641,8 @@ nav .tagline {
     }
 
     .lightbox {
-        max-width: 800px;
-        left: calc(50% - 400px);
+        /* max-width: 800px; */
+        /* left: calc(50% - 400px); */
     }
 
 }

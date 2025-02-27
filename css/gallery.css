@@ -29,9 +29,9 @@ picture img {
         margin-top: 5vh;
     }
 
-    .lightbox {
+    /* .lightbox {
         max-width: 800px;
         left: calc(50% - 400px);
         bottom: calc(25% - 100px);
-    }
-}
+    }*/
+} 
