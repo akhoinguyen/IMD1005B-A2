@@ -2,6 +2,37 @@
 
 ---
 
+## Reflections
+
+Welcome to Mars! For this assignment, I decided to take you to our neighbouring planet. Choosing the sci-fi approach, I hope you get to view how beautiful this planet and space is while enjoy some of the information in my writing.
+
+Compared to A1, I had a few "upgrades" this round:
+
+- JavaScript lightbox! Every image has a lightbox and can be closed with either hitting Esc or clicking the Exit button
+- ```picture``` tag for image optimization instead of plain ```img```
+- Skiplinks
+- Nav bar hitbox and better responsiveness on mobile (still I'd like to put in extra effort to make a hamburger nav)
+- Overall more creative grid / flex layout
+
+Taking your feedback from A1, I made sure not to set any black to #000 black. The colour palette for the site represents Mars dusty red, and I made sure to make them accessible contrast-wise.
+
+The biggest improvement this time around I would say was the versatility of the use of grid and flexbox. I think I have a bit better understanding of when to use which now, and they worked for the most part as expected. Oh - also, I discovered a new property that helped me tremendously in styling images as I intended to: ```object-fit```. This was a life saver and I was able to make images size seemlessly and create beautiful layouts and get creative with it.
+
+The biggest challenge for me was JavaScript. I sweat quite a bit trying to get the lightbox feature to work, and it took many rounds of debugging, reworking for it to work as intended.
+
+Things I wish I could implement (some I know the basis of how to make it work but decided not to due to time constraints):
+
+- Hamburger menu
+- Modular code templates upon page load: not having to copy paste repeated code on every page (header, footer, hero banners etc.)
+- Alt caption inside lightbox: grab alt text and insert into an empty ```p``` tag
+- Custom fancy cursor
+- Fancy animation / effects
+- ...
+
+Overall, this assignment was such a fun experience, and to be honest I think it would be top 3 portfolio worthy piece for me!
+
+---
+
 ## Attribution
 
 ### Images
@@ -31,7 +62,9 @@
 ## Issues log
 
 - Safari ```height``` property behaves unexpectedly when set to 100% - appeared in lightbox ```picture``` elemment : FIXED
-- Safari ```background-blend-mode``` renders weird when there are 2 backgrounds (an image and a colour overlay)
+- Safari ```background-blend-mode``` renders weird when there are 2 backgrounds (an image and a colour overlay) : FIXED
 
-- Child elements can't override parent elements' ```z-index```
-- ```flex``` layout breaks when ```h1``` width conflicts with word length
+- Child elements can't override parent elements' ```z-index``` : FIXED
+- ```flex``` layout breaks when width conflicts with ```h1``` length : FIXED
+
+- JS Event listener for opening / closing lightbox ```if``` conditions nesting : FIXED
