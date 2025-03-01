@@ -397,7 +397,7 @@ picture img {
 /* ---------- HEADER STYLES ---------- */
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 10000;
@@ -601,6 +601,10 @@ nav .tagline {
     }
 
 
+    
+    nav {
+        position: fixed;
+    }
 
     .nav-container {
         flex-direction: row;
