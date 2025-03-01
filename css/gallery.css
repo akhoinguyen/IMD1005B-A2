@@ -1,7 +1,6 @@
 .hero-banner {
     background-color: rgba(0, 0, 0, .67);
     background-image: url("../images/mars-2.jpg");
-    background-blend-mode: color-burn;
     background-position: center;
     margin-top: 200px;
 }

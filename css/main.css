@@ -470,7 +470,6 @@ nav .tagline {
 .hero-banner-home {
     background-color: rgba(67, 7, 7, 0.67);
     background-image: url("../images/mars-1.jpg");
-    background-blend-mode: color-burn;
     min-height: 100vh !important;
     margin-top: 100px;
 
@@ -484,12 +483,13 @@ nav .tagline {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
     height: 20vh;
-    min-height: 300px;
+    min-height: fit-content;
 }
 
 .hero-banner-content {
-    max-width: 800px;
+    max-width: 1440px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -623,7 +623,7 @@ nav .tagline {
     }
 
     .hero-banner-home .hero-banner-content {
-        margin-top: 20vh;
+        margin-top: calc(50vh -335px);
     }
 
 }
