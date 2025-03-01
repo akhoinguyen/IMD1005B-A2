@@ -489,6 +489,11 @@ nav .tagline {
     min-height: fit-content;
 }
 
+.hero-banner button {
+    width: 100%;
+    max-width: 400px;
+}
+
 .hero-banner-content {
     max-width: 1440px;
     padding: 20px;
