@@ -350,7 +350,7 @@ picture img {
     left: 0;
     width: 100%;
     height: 100%;
-    max-height: calc(100% - 275px); /* Compensate for nav height 262px */
+    max-height: calc(100% - 346px); /* Compensate for nav height 326px */
     /* max-width: 400px; */
     padding: 20px;
 }
@@ -374,7 +374,7 @@ picture img {
     position: fixed;
     background-color: initial !important;
     z-index: 2000;
-    top: 275px; /* to compensate mobile nav height 262px */
+    top: 346px; /* to compensate mobile nav height 326px */
     right: 0;
     background-color: inherit;
     padding: 20px;
@@ -587,11 +587,11 @@ nav .tagline {
     }
 
     .lightbox {
-        max-height: calc(100% - 100px); /* Compensate for nav height 70px */
+        max-height: calc(100% - 90px); /* Compensate for nav height 70px */
     }
 
     #lightbox-btn {
-        top: 100px;
+        top: 90px;
     }
 
 
