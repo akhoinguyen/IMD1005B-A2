@@ -472,7 +472,6 @@ nav .tagline {
     background-color: rgba(67, 7, 7, 0.67);
     background-image: url("../images/mars-1.jpg");
     min-height: 100vh !important;
-    margin-top: 100px;
 
 }
 
@@ -601,7 +600,7 @@ nav .tagline {
     }
 
 
-    
+
     nav {
         position: fixed;
     }

@@ -1,11 +1,5 @@
 .hero-banner {
     background-color: var(--black);
-    background-position: center;
-    margin-top: 200px;
-}
-
-.hero-banner-content {
-    margin-top: 150px;
 }
 
 .hero-banner-content a {

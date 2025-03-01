@@ -1,12 +1,6 @@
 .hero-banner {
     background-color: rgba(0, 0, 0, .67);
     background-image: url("../images/mars-2.jpg");
-    background-position: center;
-    margin-top: 200px;
-}
-
-.hero-banner-content {
-    margin-top: 150px;
 }
 
 picture {
